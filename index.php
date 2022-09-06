@@ -36,7 +36,7 @@
             "antwoord_drie" => "RequireJS",
             "goede_antwoord" => "ESLint",
             "id" => 2
-        ],
+        ]
 
     ];
 
