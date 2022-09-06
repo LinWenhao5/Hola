@@ -14,21 +14,29 @@
 <?php
     $quiz = [
         [
-            "vraag" => "hoeveel is een plus een?",
-            "antwoord_een" => "1",
-            "antwoord_twee" => "2",
-            "antwoord_drie" => "3",
-            "goede_antwoord" => "2",
+            "vraag" => "Who invented JavaScript?",
+            "antwoord_een" => "Douglas Crockford",
+            "antwoord_twee" => "Sheryl Sandberg",
+            "antwoord_drie" => "Brendan Eich",
+            "goede_antwoord" => "Brendan Eich",
             "id" => 0
         ],
         [
-            "vraag" => "hoeveel is twee plus twee?",
-            "antwoord_een" => "2",
-            "antwoord_twee" => "4",
-            "antwoord_drie" => "8",
-            "goede_antwoord" => "4",
+            "vraag" => "Which one of these is a JavaScript package manager?",
+            "antwoord_een" => "Node.js",
+            "antwoord_twee" => "TypeScript",
+            "antwoord_drie" => "npm",
+            "goede_antwoord" => "npm",
             "id" => 1
-        ]
+        ],
+        [
+            "vraag" => "Which tool can you use to ensure code quality?",
+            "antwoord_een" => "Angular",
+            "antwoord_twee" => "ESLint",
+            "antwoord_drie" => "RequireJS",
+            "goede_antwoord" => "ESLint",
+            "id" => 2
+        ],
 
     ];
 
