@@ -36,14 +36,17 @@
 ?>      <input type="submit" value="verzenden">
         </form>
 <?php
-    for ($i = 0; $i < count($quiz); $i++) {
-        if ($_POST[$i] == $quiz[$i]["goede_antwoord"]) {
-            $goed += 1;
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        for ($i = 0; $i < count($quiz); $i++) {
+            if ($_POST[$i] == $quiz[$i]["goede_antwoord"]) {
+                $goed += 1;
+            }
         }
+        $score = $goed / count($quiz) * 100;
+        echo "Je had " . count($quiz) . " van de " . $goed . " vragen goed.<br>";
+        echo "De score is " . $score . "%";
     }
-    $score = $goed / count($quiz) * 100;
-    echo "Je had " . count($quiz) . " van de " . $goed . " vragen goed.<br>";
-    echo "De score is " . $score . "%";
+
 ?>
 
 
