@@ -55,7 +55,7 @@
     <?php
     }
     ?>
-            <div class="button-home"><input type="submit" value="verzenden"></div>
+            <input type="submit" value="verzenden">
         </form>
 </div>
 
