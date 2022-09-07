@@ -44,7 +44,7 @@
 <?php
     for ($i = 0; $i < count($quiz); $i++) {
     ?>
-        <form method="post" action="index.php">
+        <form method="post" action="quiz.php">
             <label for="vraag"><?php echo $quiz[$i]["vraag"] ?></label><br>
             <input type="radio" name="<?php echo $quiz[$i]["id"] ?>" value="<?php echo $quiz[$i]["antwoord_een"] ?>">
             <label for="antwoord_een"><?php echo $quiz[$i]["antwoord_een"] ?></label><br>
