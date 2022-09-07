@@ -22,9 +22,10 @@
     border: none;
     background: blue;
     font-size: 15px;
+    color: white;
     padding: 0px;
     font-family: monospace;
-    width: 77px;
+    width: 80px;
     height: 25px;
 }
 
