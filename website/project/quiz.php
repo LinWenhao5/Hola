@@ -8,27 +8,6 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-
-    <header>
-         
-         <div class="head-top">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-sm-3">
-                     <div class="logo">
-                        <a href="index.html"><img src="images/bit-academy-logo.png" /></a>
-                     </div>
-                  </div>
-                  <div class="col-sm-9">
-                     <ul class="email text_align_right">
-                        <li class="d_none"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></li>
-                        <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
 <?php
     $quiz = [
         [
