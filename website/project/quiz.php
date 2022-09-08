@@ -40,10 +40,10 @@
     ?>
 
 <div class="form-home">
+    <form method="post" action="quiz.php">
 <?php
     for ($i = 0; $i < count($quiz); $i++) {
     ?>
-        <form method="post" action="quiz.php">
             <label for="vraag"><?php echo $quiz[$i]["vraag"] ?></label><br>
             <input type="radio" name="<?php echo $quiz[$i]["id"] ?>" value="<?php echo $quiz[$i]["antwoord_een"] ?>">
             <label for="antwoord_een"><?php echo $quiz[$i]["antwoord_een"] ?></label><br>
@@ -59,7 +59,7 @@
 </div>
 
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
         for ($i = 0; $i < count($quiz); $i++) {
             if ($_POST[$i] == $quiz[$i]["goede_antwoord"]) {
                 $goed += 1;
