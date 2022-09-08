@@ -34,7 +34,6 @@
             "goede_antwoord" => "ESLint",
             "id" => 2
         ]
-
     ];
 
     $goed = 0;
@@ -64,11 +63,15 @@
         for ($i = 0; $i < count($quiz); $i++) {
             if ($_POST[$i] == $quiz[$i]["goede_antwoord"]) {
                 $goed += 1;
+            } else {
+                $id = $i + 1;
+                echo "Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]} <br>";
             }
         }
         $score = $goed / count($quiz) * 100;
-        echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
-        echo "De score is " . $score . "%";
+        $aantal = count($quiz);
+        echo "Je had {$goed} van de {$aantal} vragen goed.<br>";
+        echo "De score is {$score} %";
     }
 
 ?>
