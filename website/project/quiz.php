@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+    <h2>Wat hoort tussen de []!</h2>
 <?php
     $quiz = [
         [
-            "vraag" => "Who invented JavaScript?",
-            "antwoord_een" => "Douglas Crockford",
-            "antwoord_twee" => "Sheryl Sandberg",
-            "antwoord_drie" => "Brendan Eich",
-            "goede_antwoord" => "Brendan Eich",
+            "vraag" => "}[ ](variabel i < 6);",
+            "antwoord_een" => "for",
+            "antwoord_twee" => "if",
+            "antwoord_drie" => "while",
+            "goede_antwoord" => "while",
             "id" => 0
         ],
         [
-            "vraag" => "Which one of these is a JavaScript package manager?",
-            "antwoord_een" => "Node.js",
-            "antwoord_twee" => "TypeScript",
-            "antwoord_drie" => "npm",
-            "goede_antwoord" => "npm",
+            "vraag" => "[](variabel i = 0; variabel i < 10;",
+            "antwoord_een" => "if",
+            "antwoord_twee" => "while",
+            "antwoord_drie" => "for",
+            "goede_antwoord" => "for",
             "id" => 1
         ],
         [
-            "vraag" => "Which tool can you use to ensure code quality?",
-            "antwoord_een" => "Angular",
-            "antwoord_twee" => "ESLint",
-            "antwoord_drie" => "RequireJS",
-            "goede_antwoord" => "ESLint",
+            "vraag" => "} [] (variabel a > variabel b) {",
+            "antwoord_een" => "else",
+            "antwoord_twee" => "if",
+            "antwoord_drie" => "elseif",
+            "goede_antwoord" => "elseif",
             "id" => 2
         ]
 
@@ -68,7 +69,11 @@
         }
         $score = $goed / count($quiz) * 100;
         echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
-        echo "De score is " . $score . "%";
+        echo "De score is " . $score . "%<br>";
+        ?>
+        <a href="https://www.w3schools.com/php/default.asp">Hier voor extra uitleg</a>
+        
+        <?php
     }
 
 ?>
