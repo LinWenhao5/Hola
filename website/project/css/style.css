@@ -507,8 +507,6 @@ ul.email li img {
      text-align: center;
      font-weight: 500;
      transition: ease-in all 0.5s;
-     display: flex;
-     flex-direction: ;
 }
 
 .read_more:hover {

@@ -5,6 +5,26 @@ head{
     padding: 33px 30px;
 }
 
+.read_more {
+    display: block;
+    background: #0e025e;
+    color: #fff;
+    max-width: 224px;
+    height: 61px;
+    padding: 14px 0px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+}
+
+.read_more:hover {
+    background: #0e025e;
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
 .button-home {
     background-color: blue; /* Green */
     border: none;
