@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <h2>Wat hoort tussen de []!</h2>
 <?php
     $quiz = [
         [
-            "vraag" => "function myFunction() {<br>
-                alert(Hello World!);<br>
-              }<br>
-             [] ;",
-            "antwoord_een" => "return",
-            "antwoord_twee" => "function",
-            "antwoord_drie" => "myFunction()",
-            "goede_antwoord" => "while",
+            "vraag" => "let length = 16;          //  Number<br>
+            let lastName = Johnson;              //   String<br>
+            const x = {<br>
+              firstName: John,<br>
+              lastName: Doe<br>
+            };                                  // []
+            ",
+            "antwoord_een" => "let",
+            "antwoord_twee" => "number",
+            "antwoord_drie" => "object",
+            "goede_antwoord" => "object",
             "id" => 0
         ],
         [
@@ -28,19 +30,22 @@
                 lastName: Doe<br>
               };<br>
               
-              alert([ ]);",
-            "antwoord_een" => "person.name",
-            "antwoord_twee" => "person.lastname",
+              alert([]);",
+            "antwoord_een" => "if",
+            "antwoord_twee" => "const",
             "antwoord_drie" => "person.firstName",
             "goede_antwoord" => "person.firstName",
             "id" => 1
         ],
         [
-            "vraag" => "<button =alert('Hello')>Click me.</button>",
-            "antwoord_een" => "on",
-            "antwoord_twee" => "click",
-            "antwoord_drie" => "onclick",
-            "goede_antwoord" => "onclick",
+            "vraag" => "let txt = Hello World!;<br>
+            let x = []<br>
+            txt.length;<br>
+            alert(x);",
+            "antwoord_een" => "length",
+            "antwoord_twee" => "txt",
+            "antwoord_drie" => "txt.length",
+            "goede_antwoord" => "txt.length",
             "id" => 2
         ]
     ];
@@ -50,6 +55,7 @@
 
 <div class="form-home">
     <form method="post" action="quiz.php">
+        <label for="title"><h2>Wat hoort tussen de []!</h2></label>
 <?php
     for ($i = 0; $i < count($quiz); $i++) {
     ?>
@@ -65,7 +71,6 @@
     ?>
             <input type="submit" value="verzenden">
         </form>
-</div>
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
@@ -74,18 +79,18 @@
                 $goed += 1;
             } else {
                 $id = $i + 1;
-                echo "<p class='result'>Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]}</p>";
+                echo "<p>Vraag {$id}: Uw antwoord is <a class='red'>{$_POST[$i]}</a> en het juiste antwoord is <a class='green'>{$quiz[$i]["goede_antwoord"]}</a>.</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
+        $score = round($score);
         echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
         echo "De score is " . $score . "%<br>";
         ?>
         <a href="https://www.w3schools.com/js/default.asp">Hier voor extra uitleg</a>
-        
         <?php
     }
-
 ?>
+</div>
 </body>
 </html>

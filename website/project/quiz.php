@@ -32,7 +32,11 @@
 <?php
     $quiz = [
         [
-            "vraag" => "}[ ](variabel i < 6);",
+            "vraag" => "variabel i = 1;<br> 
+            [] (variabel i < 6) {<br>
+            echo variabel i;<br>
+              variabel i++;<br>
+            }",
             "antwoord_een" => "for",
             "antwoord_twee" => "if",
             "antwoord_drie" => "while",
@@ -40,7 +44,9 @@
             "id" => 0
         ],
         [
-            "vraag" => "[](variabel i = 0; variabel i < 10;",
+            "vraag" => "[] (variabel i = 0; variabel i < 10; variabel i++) {<br>
+              echo variabel i;<br>
+            }",
             "antwoord_een" => "if",
             "antwoord_twee" => "while",
             "antwoord_drie" => "for",
@@ -48,11 +54,15 @@
             "id" => 1
         ],
         [
-            "vraag" => "} [] (variabel a > variabel b) {",
+            "vraag" => "variabel a = 50;<br>
+            variabel b = 10;<br>
+            [] (variabel a > variabel b) {<br>
+              echo Hello World;<br>
+            }",
             "antwoord_een" => "else",
-            "antwoord_twee" => "if",
-            "antwoord_drie" => "elseif",
-            "goede_antwoord" => "elseif",
+            "antwoord_twee" => "elseif",
+            "antwoord_drie" => "if",
+            "goede_antwoord" => "if",
             "id" => 2
         ]
     ];
