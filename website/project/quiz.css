@@ -56,7 +56,7 @@ head{
     height: 25px;
 }
 
-label {
+label, p {
     font-family: monospace;
 }
 
