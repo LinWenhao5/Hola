@@ -40,8 +40,8 @@
     ?>
 
 <div class="form-home">
-    <h2>Wat hoort tussen de []!</h2>
     <form method="post" action="quiz.php">
+        <label for="title"><h2>Wat hoort tussen de []!</h2></label>
 <?php
     for ($i = 0; $i < count($quiz); $i++) {
     ?>
@@ -65,10 +65,11 @@
                 $goed += 1;
             } else {
                 $id = $i + 1;
-                echo "<p class='result'>Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]}</p>";
+                echo "<p>Vraag {$id}: Uw antwoord is <a class='red'>{$_POST[$i]}</a> en het juiste antwoord is <a class='green'>{$quiz[$i]["goede_antwoord"]}</a>.</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
+        $score = round($score);
         echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
         echo "De score is " . $score . "%<br>";
         ?>

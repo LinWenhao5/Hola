@@ -33,13 +33,13 @@ label {
     font-family: monospace;
 }
 
-.result {
+.red {
     color:red;
 }
 
-.form-home {
-    display: flex;
-    justify-content: center;
+.green {
+    color: green;
 }
+
 
 
