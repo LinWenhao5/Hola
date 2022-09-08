@@ -22,23 +22,20 @@
             "id" => 0
         ],
         [
-            "vraag" => "<form action=/action_page.php >[]   
-            Name: <input type=text name=name>
-            <input type=submit>
-            </form>",
-            "antwoord_een" => "method=get",
-            "antwoord_twee" => "method=push",
-            "antwoord_drie" => "method=post",
-            "goede_antwoord" => "method=post",
+            "vraag" => "img src=scream.png []=250 height=400",
+            "antwoord_een" => "length",
+            "antwoord_twee" => "margin",
+            "antwoord_drie" => "width",
+            "goede_antwoord" => "width",
             "id" => 1
         ],
         [
-            "vraag" => "<body><br>
-            <p id=demo>Hi.</p>
-            <script><br>
+            "vraag" => "(body<br>
+            p id=demo Hi./p
+            script<br>
             document.[](demo).innerHTML = Hello World!;<br>
-            </script><br>
-            </body>",
+            script<br>
+            body)",
             "antwoord_een" => "id",
             "antwoord_twee" => "getelement",
             "antwoord_drie" => "getElementById",
