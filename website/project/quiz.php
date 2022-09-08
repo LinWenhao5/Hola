@@ -56,7 +56,6 @@
     ?>
             <input type="submit" value="verzenden">
         </form>
-</div>
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
@@ -73,7 +72,7 @@
         echo "Je had {$goed} van de {$aantal} vragen goed.<br>";
         echo "De score is {$score} %";
     }
-
 ?>
+</div>
 </body>
 </html>

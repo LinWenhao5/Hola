@@ -37,4 +37,9 @@ label {
     color:red;
 }
 
+.form-home {
+    display: flex;
+    justify-content: center;
+}
+
 
