@@ -35,7 +35,6 @@
             "goede_antwoord" => "elseif",
             "id" => 2
         ]
-
     ];
 
     $goed = 0;
@@ -65,6 +64,9 @@
         for ($i = 0; $i < count($quiz); $i++) {
             if ($_POST[$i] == $quiz[$i]["goede_antwoord"]) {
                 $goed += 1;
+            } else {
+                $id = $i + 1;
+                echo "<p class='result'>Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]}</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
