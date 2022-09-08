@@ -1,3 +1,10 @@
+head{
+    height: 105px;
+    background: #0e025e;
+    width: 100%;
+    padding: 33px 30px;
+}
+
 .button-home {
     background-color: blue; /* Green */
     border: none;
