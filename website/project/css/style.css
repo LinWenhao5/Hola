@@ -243,7 +243,7 @@ button {
 
 header {
      height: 105px;
-     background: #0e025e;
+     background: bisque;
      width: 100%;
      padding: 33px 30px;
 }
@@ -500,14 +500,57 @@ ul.email li img {
      text-transform: uppercase;
 }
 
+.logo {
+     z-index: 20;
+     position: relative;
+     width: 132px;
+     bottom: 42px;
+ }
+
 .read_more {
      display: block;
      background: #0e025e;
      color: #fff;
      max-width: 224px;
+     height: 60px;
+     padding: 15px 22px 20px 20px;
+     width: 31%;
+     font-size: 17px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+     display: flex;
+     margin-left: 10px;
+ }
+
+ .return_button {
+     display: block;
+     background: #0e025e;
+     color: #fff;
+     max-width: 39px;
+     height: 13px;
+     padding: 15px 22px 20px 20px;
+     width: 31%;
+     font-size: 18px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+     display: flex;
+     margin-left: 10px;
+ }
+
+ .about_box_text {
+     width: 645px;
+ }
+
+ .read_more-home {
+     display: block;
+     background: #0e025e;
+     color: #fff;
+     max-width: 224px;
      height: 61px;
-     padding: 14px 0px;
-     width: 100%;
+     padding: 15px 7px;
+     width: 14%;
      font-size: 17px;
      text-align: center;
      font-weight: 500;
@@ -519,6 +562,10 @@ ul.email li img {
      color: #fff;
      transition: ease-in all 0.5s;
 }
+
+.button-quiz {
+     display: flex;
+ }
 
 
 /** building **/

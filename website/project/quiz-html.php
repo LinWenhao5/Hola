@@ -8,41 +8,39 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <a class="return_button" href="index.html">Terug</a>
+<a class="return_button" href="index.html">Terug</a>
 <?php
     $quiz = [
         [
-            "vraag" => "variabel i = 1;<br> 
-            [] (variabel i < 6) {<br>
-            echo variabel i;<br>
-              variabel i++;<br>
-            }",
-            "antwoord_een" => "for",
-            "antwoord_twee" => "if",
-            "antwoord_drie" => "while",
-            "goede_antwoord" => "while",
+            "vraag" => "Maak de tekst dik gedrukt bij degradation<br>
+            <p><br>
+            WWF's mission is to stop the []degradation[] of our planet's natural environment.<br>
+            </p>",
+            "antwoord_een" => "strong",
+            "antwoord_twee" => "br",
+            "antwoord_drie" => "em",
+            "goede_antwoord" => "strong",
             "id" => 0
         ],
         [
-            "vraag" => "[] (variabel i = 0; variabel i < 10; variabel i++) {<br>
-              echo variabel i;<br>
-            }",
-            "antwoord_een" => "if",
-            "antwoord_twee" => "while",
-            "antwoord_drie" => "for",
-            "goede_antwoord" => "for",
+            "vraag" => "img src=scream.png []=250 height=400",
+            "antwoord_een" => "length",
+            "antwoord_twee" => "margin",
+            "antwoord_drie" => "width",
+            "goede_antwoord" => "width",
             "id" => 1
         ],
         [
-            "vraag" => "variabel a = 50;<br>
-            variabel b = 10;<br>
-            [] (variabel a > variabel b) {<br>
-              echo Hello World;<br>
-            }",
-            "antwoord_een" => "else",
-            "antwoord_twee" => "elseif",
-            "antwoord_drie" => "if",
-            "goede_antwoord" => "if",
+            "vraag" => "(body<br>
+            p id=demo Hi./p
+            script<br>
+            document.[](demo).innerHTML = Hello World!;<br>
+            script<br>
+            body)",
+            "antwoord_een" => "id",
+            "antwoord_twee" => "getelement",
+            "antwoord_drie" => "getElementById",
+            "goede_antwoord" => "getElementById",
             "id" => 2
         ]
     ];
@@ -76,15 +74,15 @@
                 $goed += 1;
             } else {
                 $id = $i + 1;
-                echo "<p>Vraag {$id}: Uw antwoord is <strong class='red'>{$_POST[$i]}</strong> en het juiste antwoord is <strong class='green'>{$quiz[$i]["goede_antwoord"]}</strong>.</p>";
+                echo "<p>Vraag {$id}: Uw antwoord is <a class='red'>{$_POST[$i]}</a> en het juiste antwoord is <a class='green'>{$quiz[$i]["goede_antwoord"]}</a>.</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
         $score = round($score);
-        echo "<P>Je had {$goed} van de " . count($quiz) . " vragen goed.</P>";
-        echo "<P>De score is " . $score . "%</P>";
+        echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
+        echo "De score is " . $score . "%<br>";
         ?>
-        <a href="https://www.w3schools.com/php/default.asp">Hier voor extra uitleg</a>
+        <a href="https://www.w3schools.com/tags/default.asp">Hier voor extra uitleg</a>
         <?php
     }
 ?>
