@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<a class="read_more" href="index.html">Terug</a>
+<a class="return_button" href="index.html">Terug</a>
 <?php
     $quiz = [
         [
