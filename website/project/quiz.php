@@ -65,7 +65,7 @@
                 $goed += 1;
             } else {
                 $id = $i + 1;
-                echo "Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]} <br>";
+                echo "<p class='result'>Antwoord op vraag {$id} is {$quiz[$i]["goede_antwoord"]}</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
