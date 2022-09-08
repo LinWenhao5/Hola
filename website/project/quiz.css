@@ -45,6 +45,23 @@ head{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
+  a.return_button {
+    display: block;
+    background: #0e025e;
+    color: #fff;
+    max-width: 39px;
+    height: 13px;
+    padding: 15px 22px 20px 20px;
+    width: 31%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+    display: flex;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
   input[type="submit"] {
     border: none;
     background: blue;

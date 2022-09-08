@@ -517,6 +517,23 @@ ul.email li img {
      display: flex;
      margin-left: 10px;
  }
+
+ .return_button {
+     display: block;
+     background: #0e025e;
+     color: #fff;
+     max-width: 39px;
+     height: 13px;
+     padding: 15px 22px 20px 20px;
+     width: 31%;
+     font-size: 18px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+     display: flex;
+     margin-left: 10px;
+ }
+
  .about_box_text {
      width: 645px;
  }
