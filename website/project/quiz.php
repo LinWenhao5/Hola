@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <h2>Wat hoort tussen de []!</h2>
 <?php
     $quiz = [
         [
@@ -41,6 +40,7 @@
     ?>
 
 <div class="form-home">
+    <h2>Wat hoort tussen de []!</h2>
     <form method="post" action="quiz.php">
 <?php
     for ($i = 0; $i < count($quiz); $i++) {
@@ -73,7 +73,6 @@
         echo "De score is " . $score . "%<br>";
         ?>
         <a href="https://www.w3schools.com/php/default.asp">Hier voor extra uitleg</a>
-        
         <?php
     }
 ?>
