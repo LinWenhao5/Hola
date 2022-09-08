@@ -75,13 +75,13 @@
                 $goed += 1;
             } else {
                 $id = $i + 1;
-                echo "<p>Vraag {$id}: Uw antwoord is <a class='red'>{$_POST[$i]}</a> en het juiste antwoord is <a class='green'>{$quiz[$i]["goede_antwoord"]}</a>.</p>";
+                echo "<p>Vraag {$id}: Uw antwoord is <strong class='red'>{$_POST[$i]}</strong> en het juiste antwoord is <strong class='green'>{$quiz[$i]["goede_antwoord"]}</strong>.</p>";
             }
         }
         $score = $goed / count($quiz) * 100;
         $score = round($score);
-        echo "Je had " . $goed . " van de " . count($quiz) . " vragen goed.<br>";
-        echo "De score is " . $score . "%<br>";
+        echo "<P>Je had {$goed} van de " . count($quiz) . " vragen goed.</P>";
+        echo "<P>De score is " . $score . "%</P>";
         ?>
         <a href="https://www.w3schools.com/php/default.asp">Hier voor extra uitleg</a>
         <?php
